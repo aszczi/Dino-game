@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dinoo</title>
+
+</head>
+
+<body>
+    <h1>Adventures of Dino</h1>
+    <canvas id="game" width="1280px" height="580px"></canvas>
+  
+
+    <style>
+        canvas {
+
+            background-color: lightskyblue;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var can = document.getElementById('game');
+        var ctx = document.getContext('2d');
+        var platform_picture = new Image();
+        platform_picture.src = 'platform.png';
+        var dino = new Image();
+        dino.src=src='dino.png';
+
+        function draw() {
+            ctx.clearRect(0, 0, can.width, can.height);
+
+        }
+        function platform(px, py, pwidth, pheight) {
+            this.x = px;
+            this.y = py;
+            this.width = pwidth;
+            this.height = pheight;
+        }
+        function draw_platform(){
+for(var i  = 0; i < plat.length; i++){
+    
+}
+
+        }
+
+        setInterval(draw, 10);
+
+    </script>
+
+
+</body>
+
+</html>
